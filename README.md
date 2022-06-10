@@ -5,4 +5,4 @@ This project is for the Inspiration Jam -> DCI Hackathon.
 
 -Digital Marketing Area:
 
-Your next jump in your business 
+<!-- Your next jump in your business  -->
