@@ -1,0 +1,23 @@
+$hoverColor:  #7b8085;
+
+.middle-nav-container{
+    width: 30%;
+    
+
+    & a{
+        transition: all .3s ease;
+        &:hover{
+            color: $hoverColor !important;
+        }
+    }
+}
+
+
+.request-pill {
+    transition: all 0.5s ease;
+   &:hover{
+        background: $hoverColor;
+        border: 2px solid $hoverColor !important ;
+        color: white
+}
+}
