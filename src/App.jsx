@@ -1,11 +1,10 @@
-
-import React from 'react'
-import './App.scss';
+import React from "react";
+import "./App.scss";
 import Routers from "./Routers";
 import ContactForm from "./components/ContactForm/ContactForm";
 
-import Navbar from './components/Navbar/Navbar'
-
+import Navbar from "./components/Navbar/Navbar";
+import  ServicesDropdown from './components/Navbar/NavbarComps/ServicesDropdown'
 
 function App() {
   return (
@@ -13,6 +12,8 @@ function App() {
       <Navbar />
         <Routers />
         <ContactForm />
+      <Routers />
+      {/* <ServicesDropdown /> */}
     </div>
   );
 }
