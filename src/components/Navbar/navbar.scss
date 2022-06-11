@@ -1,5 +1,5 @@
 $hoverColor:  #7b8085;
-
+$hoverColorDark: #212529;
 .middle-nav-container{
     width: 30%;
     
@@ -15,9 +15,11 @@ $hoverColor:  #7b8085;
 
 .request-pill {
     transition: all 0.5s ease;
+    padding: 10px ;
+    font-weight: bold;
    &:hover{
-        background: $hoverColor;
-        border: 2px solid $hoverColor !important ;
+        background: $hoverColorDark;
+        border: 2px solid $hoverColorDark !important ;
         color: white
 }
 }
