@@ -27,6 +27,11 @@
   }
 }
 
+.fade-overlay {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
 .gallery-picture-bl {
   position: relative;
   grid-area: gallery-picture-bl;
