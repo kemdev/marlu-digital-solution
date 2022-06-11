@@ -1,10 +1,8 @@
-
 import React from "react";
 import Parallaximg from "./LandingPageComponents/Parallaximg";
-
+import './landingPage.scss'
 
 export default function LandingPage() {
-
 
   return (
     <div>

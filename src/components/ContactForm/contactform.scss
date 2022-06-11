@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  font-family: "Arial", sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  background: rgba(0, 0, 0, 0);
+  outline: none;
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid grey !important;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  margin-top: 2rem;
+}
+
+textarea:focus,
+input:focus {
+  color: white;
+}
+
+.container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 20px;
+}
+
+.contact-form {
+  max-width: 1350px;
+  margin: 0 auto;
+  background: #2f344c;
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 0 0 10px #2f344c;
+}
+.input-class {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+.input-class,
+.msg {
+  width: 48%;
+}
+.input-class .input,
+.msg textarea {
+  margin: 10px 0;
+  background: #0e082e;
+  border-bottom: 2px solid white !important;
+  box-shadow: none;
+  padding: 10px;
+  width: 100%;
+}
+
+.input,
+.msg,
+textarea {
+  color: white !important;
+  resize: none !important;
+}
+
+.msg textarea {
+  height: 200px;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+::-moz-input-placeholder {
+  color: white;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-input-placeholder {
+   opacity: 0;
+}
+ 
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+ 
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+   opacity: 0;
+}
+
+.btn {
+  background: #5638be;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: white !important;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+  width: 90%;
+  margin-right: 10rem;
+}
+
+msg,
+button:hover {
+  background-color: #5638be;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-fome {
+    flex-direction: column;
+  }
+  .msg text-area {
+    height: 80px;
+  }
+  .input-class,
+  .msg {
+    width: 100%;
+  }
+}
