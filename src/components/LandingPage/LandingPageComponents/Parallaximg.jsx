@@ -6,14 +6,14 @@ export default function header() {
   return (
     <Parallax
       className="image"
-      bgImage="https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80"
+      bgImage="https://i.pinimg.com/originals/c7/5c/51/c75c512a82d73171f07c7f42e50b83f5.jpg"
       strength={500}
     >
       <div className="content">
         <span className="img-txt">
-            <h1>"Your company's a diamond! Win or lose, we mesh and ship!"</h1>
-            <h2>Let go of your branding axieties</h2>
-            <h2>You're in good hands with MDS</h2>
+            <h1>JUMP YOUR BUSINESS</h1>
+            <h2>TO THE NEXT LEVEL!</h2>
+            <h3>With Marlu Digital Solutions</h3>
         </span>
       </div>
     </Parallax>
