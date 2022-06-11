@@ -10,30 +10,33 @@ import HtmlTooltip from "./NavbarComps/HtmlToolTip";
 import ServicesDropdown from "./NavbarComps/ServicesDropdown";
 import SolutionsDropdown from "./NavbarComps/SolutionsDropdown";
 
-export default function Navbar() {
+import Image from "../../img/Logo_3.png";
+
+export default function Navbar({
+  defaultBackgroundColor,
+  setDefaultBackgroundColor,
+}) {
   const logoStyle = {
     width: 64,
     height: 64,
   };
 
   return (
-    <div className="d-flex justify-content-between align-items-center py-2 px-5" style={{backgroundColor: 'transparent'}}>
-      <div className="logo">
-        <img
-          style={logoStyle}
-          src="https://www.pngfind.com/pngs/m/16-160626_kangaroo-png-kangaroo-icon-transparent-png.png"
-        />
-      </div>
+    <div className="d-flex justify-content-between align-items-center py-2 px-5 text-light" style={{backgroundColor: 'transparent'}}>
+      <Link to="/" className="logo">
+        <img style={logoStyle} src={Image} />
+      </Link>
       <div
-        className="middle-nav-container d-flex justify-content-between align-items-center text-dark"
-        style={{ fontWeight: "bold", fontSize: "1.2rem" }}
+        className="middle-nav-container d-flex justify-content-between align-items-center"
+        // style={{ fontWeight: "bold", fontSize: "1.2rem" }}
       >
-        <HtmlTooltip  title={<SolutionsDropdown />}>
+        <HtmlTooltip
+          title={<SolutionsDropdown />}
+          style={{ backgroundColor: defaultBackgroundColor }}
+        >
           Solutions
         </HtmlTooltip>
-        <HtmlTooltip title={<ServicesDropdown />}>
-          Services
-        </HtmlTooltip>
+        <HtmlTooltip title={<ServicesDropdown />}>Services</HtmlTooltip>
         <Link to="/portfolio">Portfolio</Link>
         <Link to="/about-us">Abous US</Link>
       </div>
@@ -48,7 +51,6 @@ export default function Navbar() {
           </span>
         </div>
       </Link>
-     
     </div>
   );
 }
