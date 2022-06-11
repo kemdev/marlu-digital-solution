@@ -8,17 +8,22 @@ import ServicesDropdown from "./components/Navbar/NavbarComps/ServicesDropdown";
 import { MarluContext } from "./components/Context";
 
 function App() {
-  const { defaultBackgroundColor, setDefaultBackgroundColor } =
-    useContext(MarluContext);
+  const { defaultBackgroundColor, colorPalette } = useContext(MarluContext);
 
-    console.log('Color is', defaultBackgroundColor);
+  console.log("Color is", defaultBackgroundColor);
+
+
+
   return (
     <div
       className="App mainApp"
       style={{ backgroundColor: defaultBackgroundColor }}
+
     >
-      <Navbar />
-        <Routers />
+      <Navbar
+        textColor={colorPalette.textColor}
+      />
+      <Routers />
     </div>
   );
 }
