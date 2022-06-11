@@ -24,9 +24,6 @@ function App() {
         textColor={colorPalette.textColor}
       />
       <Routers />
-      {/* <div style={{ display: "grid", placeContent: "center" }}>
-        <ServicesDropdown />
-      </div> */}
     </div>
   );
 }
