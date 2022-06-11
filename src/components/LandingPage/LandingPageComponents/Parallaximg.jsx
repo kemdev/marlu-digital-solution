@@ -2,7 +2,6 @@ import React from "react";
 import "./Parallaximg.scss";
 import { Parallax } from "react-parallax";
 
-import headerGif from "../../../img/headerGif.gif"
 
 export default function header() {
   return (
