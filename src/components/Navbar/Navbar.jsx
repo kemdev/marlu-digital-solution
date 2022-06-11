@@ -22,7 +22,7 @@ export default function Navbar({
   };
 
   return (
-    <div className="d-flex justify-content-between align-items-center py-2 px-5 text-light">
+    <div className="d-flex justify-content-between align-items-center py-2 px-5 text-light" style={{backgroundColor: 'transparent'}}>
       <Link to="/" className="logo">
         <img style={logoStyle} src={Image} />
       </Link>
