@@ -9,6 +9,7 @@ import { CgArrowRightO } from "react-icons/cg";
 import HtmlTooltip from "./NavbarComps/HtmlToolTip";
 import ServicesDropdown from "./NavbarComps/ServicesDropdown";
 import SolutionsDropdown from "./NavbarComps/SolutionsDropdown";
+import {useLocation} from "react-router-dom";
 
 // import Image from "../../img/Logo_3.png";
 import Image from "../../img/logo2.png";
@@ -25,7 +26,7 @@ export default function Navbar({
     width: '100%',
     // height: 64,
   };
-
+  const location= useLocation();
   const [scrollNavColor, setScrollNavColor] = useState(undefined);
   const [isPill, setIsPill] = useState(false);
   
@@ -38,21 +39,18 @@ export default function Navbar({
     }
   };
 
-
   useEffect(() => {
     window.addEventListener('scroll', listenScrollEvent)
     return () =>
     window.removeEventListener('scroll', listenScrollEvent);
 
   }, [])
-
-  console.log('Windows', window.scrollY)
   
 
 
 
   return (
-    <div className={`fixed-top`}  style={{backgroundColor: scrollNavColor}}>
+    <div className={`${location.pathname=== "/" && "fixed-top"}`}  style={{backgroundColor: scrollNavColor}}>
       <div
         className="d-flex justify-content-between align-items-center py-2 px-5 "
         style={{  color: textColor }}
