@@ -8,8 +8,9 @@ export default function ServiceDropdown() {
         display: "grid",
         gridAutoColumns: "1fr 1fr",
         gridTemplateColumns: " repeat(2, 1fr)",
-        gridTemplateRows: "repeat(2, 1fr)",
-
+        height: "12rem",
+        alignItems: 'center',
+        justifyItems: 'center',
       }}
     >
       <Link to="/webdev">Web Development</Link>
