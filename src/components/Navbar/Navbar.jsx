@@ -68,6 +68,7 @@ export default function Navbar({
           <Link to="/portfolio">Portfolio</Link>
           <Link to="/about-us">Abous US</Link>
           <Link to="/contact-us">Contact US</Link>
+          <Link to="/career">Career</Link>  
         </div>
         <Link to="/request">
           <div
