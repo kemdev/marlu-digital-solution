@@ -1,9 +1,15 @@
 import React from "react";
 import "./portfolio.scss";
 
+import { motion } from "framer-motion";
+
 export default function Portfolio() {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="container">
         <div className="gallery-picture-tl gallery-picture">
           <div className="gallery-caption">
@@ -110,6 +116,6 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
