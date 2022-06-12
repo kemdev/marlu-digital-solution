@@ -10,20 +10,16 @@ export default function ServiceDropdown() {
         backgroundImage: `url(${marketing})`,
         backgroundSize: "30%",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "80% 80%",
+        backgroundPosition: "90% 80%",
       }}
       className="ms-5"
     >
-      <div
-      style={{width: '50%'}}
-      >
-        <Link to="/webdev">Web Development</Link>
-        <Link to="/marketing-ceo">Merketing - SEO</Link>
-        <Link to="/marketing-camp">Merketing - Campain</Link>
+      <div style={{ width: "80%", fontSize: "1.2rem" }}>
+        <Link to="/marketing-ceo">SEO - Organic Traffic</Link>
+        <Link to="/marketing-camp">SEA - Page Search Display</Link>
+        <Link to="/webdev">Web Development & Web design</Link>
       </div>
-      <div style={{width: '50%',}}>
-
-      </div>
+      <div style={{ width: "50%" }}></div>
     </div>
   );
 }

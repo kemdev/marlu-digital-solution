@@ -1,3 +1,19 @@
 p {
     // color: white
 }
+
+
+.hr{
+    height: 0; 
+  border: 0; 
+  border-top: 5px solid #083972; 
+}
+
+.sections {
+  .display-1{
+    font-size: 2em;
+  }
+  .sections-child{
+    margin: 5rem;
+  }
+}

@@ -9,52 +9,47 @@ import { CgArrowRightO } from "react-icons/cg";
 import HtmlTooltip from "./NavbarComps/HtmlToolTip";
 import ServicesDropdown from "./NavbarComps/ServicesDropdown";
 import SolutionsDropdown from "./NavbarComps/SolutionsDropdown";
-import {useLocation} from "react-router-dom";
-
+import { useLocation } from "react-router-dom";
 
 // import Image from "../../img/Logo_3.png";
-import Image from "../../img/logo2.png";
+import Image from "../../img/kangaroo.png";
 
 export default function Navbar({
   defaultBackgroundColor,
   setDefaultBackgroundColor,
   textColor,
-
 }) {
-
-
   const logoStyle = {
-    width: '100%',
+    width: "100%",
     // height: 64,
   };
-  const location= useLocation();
+  const location = useLocation();
   const [scrollNavColor, setScrollNavColor] = useState(undefined);
   const [isPill, setIsPill] = useState(false);
-  
+  const [fixed, setFixed] = useState(false)
+
   const listenScrollEvent = (e) => {
-    console.log('E is', e)
-    if (window.scrollY > 100) {
-      setScrollNavColor( "inherit");
+    if (window.scrollY) {
+      setScrollNavColor("rgb(15 15 15 / 80%)");
+      setFixed('fixed-top')
     } else {
-      setScrollNavColor( "transparent");
+      setScrollNavColor("transparent");
+      setFixed(false)
+
     }
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', listenScrollEvent)
-    return () =>
-    window.removeEventListener('scroll', listenScrollEvent);
-
-  }, [])
-  
-
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => window.removeEventListener("scroll", listenScrollEvent);
+  }, []);
 
 
   return (
-    <div className={`${location.pathname=== "/" && "fixed-top"}`}  style={{backgroundColor: scrollNavColor}}>
+    <div className={`${fixed}`} style={{ backgroundColor: scrollNavColor, transition: 'all 0.2s ease-in' }}>
       <div
         className="d-flex justify-content-between align-items-center py-2 px-5 "
-        style={{  color: textColor }}
+        style={{ color: textColor }}
       >
         <Link to="/" className="logo">
           <img style={logoStyle} src={Image} />
@@ -66,15 +61,15 @@ export default function Navbar({
           <HtmlTooltip title={<SolutionsDropdown />}>Solutions</HtmlTooltip>
           <HtmlTooltip title={<ServicesDropdown />}>Services</HtmlTooltip>
           <Link to="/portfolio">Portfolio</Link>
-          <Link to="/about-us">Abous US</Link>
+          <Link to="/about-us">About US</Link>
           <Link to="/contact-us">Contact US</Link>
-          <Link to="/career">Career</Link>  
+          <Link to="/career">Career</Link>
         </div>
         <Link to="/request">
           <div
             className={`request-pill`}
             style={{
-              border: "2px solid white",
+              border: "2px solid #ddba2e",
               transition: "all 0.5s ease",
               borderRadius: isPill ? "2rem" : "0.5rem",
             }}

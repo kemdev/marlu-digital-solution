@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'lucida';
+    src: url('../../../font/LucidaConsoleRegular.ttf');
+}
+
 .image {
     position: relative;
     // height: 90vh;
@@ -18,12 +23,25 @@
     // transform: translate(-50%, -50%);
     display: grid;
     place-content: center;
-    height: 100vh;
+    height: 70vh;
     & h1 {
         font-size: 4rem
     }
 
     & h2 {
-        font-size: 2rem
+        // font-size: 2rem
     }
+
+    & .display-1{
+        font-size: 6rem;
+    }
+
+    & .display-6{
+        font-family: 'lucida';
+    }
+}
+
+.middle-nav-container{
+    font-family: 'lucida';
+    text-transform: uppercase;
 }
