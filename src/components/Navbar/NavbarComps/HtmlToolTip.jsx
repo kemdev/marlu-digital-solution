@@ -4,12 +4,11 @@ import { styled } from "@mui/material/styles";
 
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 
-
 const HtmlTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} classes={{ popper: className }} />
 ))(({ theme }) => ({
   [`& .${tooltipClasses.tooltip}`]: {
-    backgroundColor: "#423040",
+    backgroundColor: "#363535",
     color: "#fff",
     maxWidth: 1000,
     width: 450,
@@ -19,12 +18,21 @@ const HtmlTooltip = styled(({ className, ...props }) => (
     borderRadius: "25px",
     padding: "10px",
     "& > div": {
-      display: "grid",
-      gridAutoColumns: "1fr 1fr",
-      gridTemplateColumns: " repeat(2, 1fr)",
-      height: "12rem",
+      display: "flex",
+      justifyContent: "space-between",
       alignItems: "center",
-      justifyItems: "center",
+      height: "12rem",
+    },
+    "& > div > div": {
+      display: "flex",
+      flexDirection: "column",
+      textAlign: "start",
+      // display: "grid",
+      // gridAutoColumns: "1fr",
+      // gridTemplateColumns: " repeat(2, 1fr)",
+      height: "12rem",
+      alignItems: "flex-start",
+      justifyContent: "space-around",
     },
   },
 }));
