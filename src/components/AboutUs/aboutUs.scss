@@ -10,7 +10,7 @@
     position: absolute;
     text-align: center;
     color: white;
-    top: 20%;
+    top:15%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    height: 70vh;
+    height:60vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -73,6 +73,7 @@
       color: white;
     }
   }
+  
   .sustainability {
     .front {
       background-image: url(https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1613&q=80);
@@ -81,6 +82,7 @@
       color: white;
     }
   }
+
   .cultural {
     .front {
       background-image: url(https://images.unsplash.com/photo-1528853985898-a8725569551b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=712&q=80);
@@ -97,6 +99,7 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
   .container .card h1 {
     color: #fff;
     font-size: 20px;
@@ -107,6 +110,7 @@
 
   .container-team {
     background-color: #0f0f0f;
+    padding-top: 10rem;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
@@ -123,7 +127,7 @@
 
     h2 {
       position: absolute;
-      top: 115%;
+      top: 105%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
@@ -179,7 +183,7 @@
       grid-area: card-jude;
 
       .jude-img {
-        background-image: url(./../../img/amr.jpeg);
+        background-image: url(https://media-exp1.licdn.com/dms/image/C4E03AQHfqVVGI5qbFQ/profile-displayphoto-shrink_800_800/0/1645125193134?e=1660780800&v=beta&t=vwnybAcP8jvBCN5WJqpl4yDRY6evpe6ybTGEzoj8tSs);
         background-size: cover;
         background-position: center;
       }
