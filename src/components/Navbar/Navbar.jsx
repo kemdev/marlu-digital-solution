@@ -66,6 +66,7 @@ export default function Navbar({
           <HtmlTooltip title={<ServicesDropdown />}>Services</HtmlTooltip>
           <Link to="/portfolio">Portfolio</Link>
           <Link to="/about-us">Abous US</Link>
+          <Link to="/career">Career</Link>  
         </div>
         <Link to="/request">
           <div

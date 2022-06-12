@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Solution from './components/Solution/Solution'
 import LandingPage from './components/LandingPage/LandingPage'
 import Portfolio from './components/Portfolio/Portfolio'
+import Career from './components/Career/Career'
 
 export default function Routers() {
   return (
@@ -11,6 +12,7 @@ export default function Routers() {
         <Route path="/solutions" element={<Solution />} />
         <Route path="/" element={<LandingPage />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/career" element={<Career />} />
     </Routes>
   )
 }
