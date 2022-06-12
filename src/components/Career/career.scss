@@ -9,7 +9,7 @@
     ". . . . ."
     ". career-img-left . career-img-right ."
     ". . . . .";
-}
+
 h1,
 h4,
 h2 {
@@ -41,7 +41,7 @@ a {
   width: 10vw;
   margin-bottom: 1rem;
 }
-
+}
 .career-jobs-container {
   background-color: #0f0f0f;
   height: 100vh;
@@ -55,7 +55,7 @@ a {
     ". jobs-marketing jobs-webdev jobs-other ."
     ". . . . ."
     ". jobs-banner jobs-banner jobs-banner .";
-}
+
 
 .jobs-marketing {
   grid-area: jobs-marketing;
@@ -80,4 +80,15 @@ a {
 
 li {
   list-style-type: none;
+}
+
+h1,
+h4,
+h2 {
+  color: white !important;
+}
+
+a {
+  color: gold !important;
+}
 }
