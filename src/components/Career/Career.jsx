@@ -33,7 +33,7 @@ export default function Career() {
       <div className="career-jobs-container">
         <div className="jobs-marketing d-flex align-items-center">
           <div className="d-flex flex-column">
-            <h2 className="lead-heading">Careers in Marketing</h2>
+            <h2 className="lead-heading">MARKETING</h2>
             <ul>
               <li>
                 <a href="./">Marketing Lead</a>
@@ -52,7 +52,7 @@ export default function Career() {
         </div>
         <div className="jobs-webdev d-flex align-items-center">
           <div className="d-flex flex-column">
-            <h2 className="lead-heading">Careers in Web Development</h2>
+            <h2 className="lead-heading">WEB DEVELOPMENT</h2>
             <ul>
                 <li>
                   <a href="./">Front-End Web-Developer</a>
@@ -71,7 +71,7 @@ export default function Career() {
           </div>
         <div className="jobs-other d-flex align-items-center" id="jobs">
           <div className="d-flex flex-column mx-5">
-            <h2 className="lead-heading">Others</h2>
+            <h2 className="lead-heading">OTHERS</h2>
             <ul>
                 <li>
                   <a href="./">Lawyer</a>
