@@ -6,12 +6,12 @@ export default function Section({
   bgColor = "#fff",
   textColor,
 }) {
-  console.log("Styles are", styles?.height);
+
   return (
     <div
       style={{
         padding: "50px",
-        height: styles?.height || "50vh",
+        height: styles?.height || "100%",
         backgroundColor: bgColor,
         color: textColor,
 

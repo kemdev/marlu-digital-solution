@@ -10,7 +10,7 @@ import { MarluContext } from "./components/Context";
 function App() {
   const { defaultBackgroundColor, colorPalette } = useContext(MarluContext);
 
-  console.log("Color is", defaultBackgroundColor);
+
 
 
 
@@ -20,10 +20,14 @@ function App() {
       style={{ backgroundColor: defaultBackgroundColor }}
 
     >
+      <div className="main-container">
+
       <Navbar
         textColor={colorPalette.textColor}
       />
+      
       <Routers />
+      </div>
     </div>
   );
 }

@@ -9,41 +9,43 @@
     ". . . . ."
     ". career-img-left . career-img-right ."
     ". . . . .";
-}
-h1,
-h4,
-h2 {
-  color: white !important;
-}
+  h1,
+  h4,
+  h2 {
+    color: white !important;
+  }
 
-a {
-  color: gold !important;
-}
+  a {
+    color: gold !important;
+  }
 
-.btn a {
-  color: black !important;
-}
+  .btn a {
+    color: black !important;
+  }
 
-.career-img-left {
-  grid-area: career-img-left;
-  color: white;
-}
+  .career-img-left {
+    grid-area: career-img-left;
+    color: white;
+  }
 
-.career-img-right {
-  grid-area: career-img-right;
-  background-image: url(https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
-  background-size: cover;
-  border-radius: 15px;
-}
+  .career-img-right {
+    grid-area: career-img-right;
+    background-image: url(https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-size: cover;
+    border-radius: 15px;
+  }
 
-.btn {
-  background-color: gold !important;
-  width: 10vw;
-  margin-bottom: 1rem;
+  .btn {
+    background-color: gold !important;
+    width: 10vw;
+    margin-bottom: 1rem;
+  }
+
+ 
 }
 
 .career-jobs-container {
-  background-color: #0f0f0f;
+  // background-color: #0f0f0f;
   height: 100vh;
   display: grid;
   grid-auto-columns: 1fr;
@@ -55,29 +57,34 @@ a {
     ". jobs-marketing jobs-webdev jobs-other ."
     ". . . . ."
     ". jobs-banner jobs-banner jobs-banner .";
+    .jobs-marketing {
+      grid-area: jobs-marketing;
+    }
+    
+    .jobs-webdev {
+      grid-area: jobs-webdev;
+    }
+    
+    .jobs-other {
+      grid-area: jobs-other;
+    }
+
+    a {
+      color: gold !important;
+    }
+  
+    
+    .jobs-banner {
+      background-image: url(https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+      grid-area: jobs-banner;
+      background-size: cover;
+      background-position: center;
+      border-radius: 25px;
+      height: 40vh;
+    }
+    
+    li {
+      list-style-type: none;
+    }
 }
 
-.jobs-marketing {
-  grid-area: jobs-marketing;
-}
-
-.jobs-webdev {
-  grid-area: jobs-webdev;
-}
-
-.jobs-other {
-  grid-area: jobs-other;
-}
-
-.jobs-banner {
-  background-image: url(https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
-  grid-area: jobs-banner;
-  background-size: cover;
-  background-position: center;
-  border-radius: 25px;
-  height: 40vh;
-}
-
-li {
-  list-style-type: none;
-}

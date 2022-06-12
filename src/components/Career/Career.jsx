@@ -1,9 +1,16 @@
 import React from "react";
 import "./career.scss";
 
+import { motion } from "framer-motion";
+
+
 export default function Career() {
   return (
-    <div>
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    >
       <div className="career-container">
         <div className="career-img-left d-flex align-items-center">
           <div className="d-flex flex-column">
@@ -83,6 +90,6 @@ export default function Career() {
         </div>
         <div className="jobs-banner"></div>
       </div>
-    </div>
+    </motion.div>
   );
 }

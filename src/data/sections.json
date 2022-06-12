@@ -1,32 +1,39 @@
 {
     "section": {
-        "title": "Section 1",
+        "title": "WE MAKE BRANDS",
         "bgColor": "#0f0f0f",
         "color": "#fff",
-        "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At risus viverra adipiscing at in tellus integer feugiat. Quis vel eros donec ac odio tempor. Mauris a diam maecenas sed enim ut sem viverra aliquet. Auctor elit sed vulputate mi sit. Vitae auctor eu augue ut lectus arcu bibendum at varius. Tempus iaculis urna id volutpat. Consectetur libero id faucibus nisl tincidunt eget nullam non. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Id semper risus in hendrerit gravida rutrum quisque. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Amet cursus sit amet dictum sit amet justo donec. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Lorem dolor sed viverra ipsum. Bibendum arcu vitae elementum curabitur vitae. Ullamcorper velit sed ullamcorper morbi."
+        "content": "Marlu is a digital marketing agency that helps mission-driven organizations to make branding and digital transformation. We're a team of marketing strategists, designers and developers who are passionate about making a difference. We believe in the power of design to change the world, and that companies with a social mission are the true drivers of innovation."
         },
     "section2": {
-        "title": "Section Two",
-        "bgColor": "",
-        "color": "black",
-        "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At risus viverra adipiscing at in tellus integer feugiat. Quis vel eros donec ac odio tempor. Mauris a diam maecenas sed enim ut sem viverra aliquet. Auctor elit sed vulputate mi sit. Vitae auctor eu augue ut lectus arcu bibendum at varius. Tempus iaculis urna id volutpat. Consectetur libero id faucibus nisl tincidunt eget nullam non. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Id semper risus in hendrerit gravida rutrum quisque. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Amet cursus sit amet dictum sit amet justo donec. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Lorem dolor sed viverra ipsum. Bibendum arcu vitae elementum curabitur vitae. Ullamcorper velit sed ullamcorper morbi."
+        "title": "Our services",
+        "bgColor": "#0f0f0f",
+        "color": "#fff",
+        "content": "From SEO to CRO, everything you need to grow your business is at your fingertips.",
+        "c1": "Build a strong reputation for your brand that will last for years to come.",
+        "c2": "Our suite of SEO tools includes powerful website bots that produce resounding results to help you rank higher on Google with minimal effort. Armed with these tools, we'll take your search engine ranking up a notch!"
     },
     "section3": {
-        "title": "Section Three",
+        "title": "The only one stop solution!",
         "bgColor": "#0f0f0f",
         "color": "#fff",
-        "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At risus viverra adipiscing at in tellus integer feugiat. Quis vel eros donec ac odio tempor. Mauris a diam maecenas sed enim ut sem viverra aliquet. Auctor elit sed vulputate mi sit. Vitae auctor eu augue ut lectus arcu bibendum at varius. Tempus iaculis urna id volutpat. Consectetur libero id faucibus nisl tincidunt eget nullam non. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Id semper risus in hendrerit gravida rutrum quisque. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Amet cursus sit amet dictum sit amet justo donec. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Lorem dolor sed viverra ipsum. Bibendum arcu vitae elementum curabitur vitae. Ullamcorper velit sed ullamcorper morbi."
+        "content": "We are proud to offer solutions that span a whole gamut of diverse categories, and are geared towards different kinds of businesses and values.",
+        "c1": "Marlu has the latest technologies in the field of marketing solutions for small business owners and big brands alike. Boost your ranking with powerful SEO tools  that let you check out how high Google will rank your website throughout search engine optimization phase from home sweet home!"
     },
     "section4": {
-        "title": "Section For",
+        "title": "time you met Marlu!",
         "bgColor": "#0f0f0f",
         "color": "#fff",
-        "content":"Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At risus viverra adipiscing at in tellus integer feugiat. Quis vel eros donec ac odio tempor. Mauris a diam maecenas sed enim ut sem viverra aliquet. Auctor elit sed vulputate mi sit. Vitae auctor eu augue ut lectus arcu bibendum at varius. Tempus iaculis urna id volutpat. Consectetur libero id faucibus nisl tincidunt eget nullam non. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Id semper risus in hendrerit gravida rutrum quisque. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Amet cursus sit amet dictum sit amet justo donec. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Lorem dolor sed viverra ipsum. Bibendum arcu vitae elementum curabitur vitae. Ullamcorper velit sed ullamcorper morbi."
+        "content":"Are you dedicated to your cause and looking for smart, intuitive marketing that helps you succeed without fail?",
+        "c1": "We are a digital marketing agency that helps mission-driven organizations find success with branding and digital transformation.",
+        "c2": "Let us handle your marketing so you can stay committed to what matters most to you."
     },
     "section5": {
-        "title": "Section Five",
+        "title": "Jump with us to the next level",
         "bgColor": "#0f0f0f",
         "color": "#fff",
-        "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At risus viverra adipiscing at in tellus integer feugiat. Quis vel eros donec ac odio tempor. Mauris a diam maecenas sed enim ut sem viverra aliquet. Auctor elit sed vulputate mi sit. Vitae auctor eu augue ut lectus arcu bibendum at varius. Tempus iaculis urna id volutpat. Consectetur libero id faucibus nisl tincidunt eget nullam non. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Id semper risus in hendrerit gravida rutrum quisque. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Amet cursus sit amet dictum sit amet justo donec. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Lorem dolor sed viverra ipsum. Bibendum arcu vitae elementum curabitur vitae. Ullamcorper velit sed ullamcorper morbi."
+        "content": "Marlu is devoted to promoting equality and unity, because we understand the significant power your organizations have.",
+        "c1": "We're here to help you brand, strengthen your digital presence, strategize, and create something people notice.",
+        "c2": "We know what it takes to find success in today's competitive market--so contact the Marlu team today"
     }
 }

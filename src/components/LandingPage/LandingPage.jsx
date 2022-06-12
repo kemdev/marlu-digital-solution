@@ -16,7 +16,6 @@ export default function LandingPage() {
   const { defaultBackgroundColor, colorPalette } = useContext(MarluContext);
 
   const sections = Object.entries(data);
-  console.log("Sections are", sections);
 
   return (
     <motion.div
@@ -26,20 +25,31 @@ export default function LandingPage() {
     >
       <Parallaximg />
 
-      <div className="d-flex flex-column">
+      <div className="d-flex flex-column sections">
         {sections?.map((section, idx) =>
           section.map(
             (sect) =>
               typeof sect !== "string" && (
-                <div className="d-flex flex-column" style={{backgroundColor: sect.bgColor}}>
+                <div className="d-flex flex-column sections-child">
                   <Section
                     textColor={sect.color}
-                    bgColor='inherit'
-                    styles={{ width: "50%", alignSelf: !(idx % 2) && "end" }}
+                    bgColor="inherit"
+                    styles={{ width: "70%", alignSelf: !(idx % 2) && "end" }}
                   >
-                    <div style={{ width: "50%" }}>
-                      <h2>{sect.title}</h2>
-                      <p>{sect.content}</p>
+                    <div
+                      style={{
+                        width: "100%",
+                        fontSize: "1.5em",
+                        backgroundColor: "#1d1c23",
+                        borderRadius: "25px",
+                        padding: "50px",
+                      }}
+                    >
+                      <h2 className=" display-1">{sect.title.toUpperCase()}</h2>
+                      <hr className="mb-4" />
+                      <p style={{ lineHeight: "2.1em" }}>{sect.content}</p>
+                      <p style={{ lineHeight: "2.1em" }}>{sect?.c1}</p>
+                      <p style={{ lineHeight: "2.1em" }}>{sect?.c2}</p>
                     </div>
                   </Section>
                 </div>

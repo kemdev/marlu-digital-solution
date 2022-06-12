@@ -10,7 +10,7 @@ export default function Portfolio() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="container">
+      <div className="portfolio-container">
         <div className="gallery-picture-tl gallery-picture">
           <div className="gallery-caption">
             <h2>Placeholder</h2>
