@@ -11,6 +11,7 @@ import ServicesDropdown from "./NavbarComps/ServicesDropdown";
 import SolutionsDropdown from "./NavbarComps/SolutionsDropdown";
 import {useLocation} from "react-router-dom";
 
+
 // import Image from "../../img/Logo_3.png";
 import Image from "../../img/logo2.png";
 
@@ -66,6 +67,7 @@ export default function Navbar({
           <HtmlTooltip title={<ServicesDropdown />}>Services</HtmlTooltip>
           <Link to="/portfolio">Portfolio</Link>
           <Link to="/about-us">Abous US</Link>
+          <Link to="/contact-us">Contact US</Link>
         </div>
         <Link to="/request">
           <div
