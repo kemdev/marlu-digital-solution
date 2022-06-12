@@ -15,6 +15,7 @@
     color: white !important;
   }
 
+
   a {
     color: gold !important;
   }
@@ -43,7 +44,7 @@
 
  
 }
-
+}
 .career-jobs-container {
   // background-color: #0f0f0f;
   height: 100vh;
@@ -57,6 +58,7 @@
     ". jobs-marketing jobs-webdev jobs-other ."
     ". . . . ."
     ". jobs-banner jobs-banner jobs-banner .";
+
     .jobs-marketing {
       grid-area: jobs-marketing;
     }
@@ -68,6 +70,7 @@
     .jobs-other {
       grid-area: jobs-other;
     }
+
 
     a {
       color: gold !important;
