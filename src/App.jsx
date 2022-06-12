@@ -12,7 +12,7 @@ function App() {
 
   console.log("Color is", defaultBackgroundColor);
 
-
+  
 
   return (
     <div
