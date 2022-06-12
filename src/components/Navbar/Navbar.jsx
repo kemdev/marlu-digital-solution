@@ -46,7 +46,10 @@ export default function Navbar({
 
 
   return (
-    <div className={`${fixed}`} style={{ backgroundColor: scrollNavColor, transition: 'all 0.2s ease-in' }}>
+
+
+    <div className={`${fixed} ${location.pathname==='/about-us' && 'fixed-top'}`} style={{ backgroundColor: scrollNavColor, transition: 'all 0.2s ease-in' }}>
+
       <div
         className="d-flex justify-content-between align-items-center py-2 px-5 "
         style={{ color: textColor }}
