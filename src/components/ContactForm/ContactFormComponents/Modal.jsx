@@ -12,19 +12,23 @@ import {
   MDBModalFooter,
 } from "mdb-react-ui-kit";
 
-export default function App() {
-  const [basicModal, setBasicModal] = useState(false);
+import "../contactform.scss";
 
-  const toggleShow = () => setBasicModal(!basicModal);
-
+export default function Modal({
+  basicModal,
+  setBasicModal,
+  toggleShow,
+  sent,
+  setSent,
+}) {
   return (
     <>
-      <MDBBtn onClick={toggleShow}>LAUNCH DEMO MODAL</MDBBtn>
+      {/* <MDBBtn onClick={toggleShow}>LAUNCH DEMO MODAL</MDBBtn> */}
       <MDBModal show={basicModal} setShow={setBasicModal} tabIndex="-1">
-        <MDBModalDialog>
-          <MDBModalContent>
+        <MDBModalDialog centered>
+          <MDBModalContent style={{ backgroundColor: "#1d1c23" }}>
             <MDBModalHeader>
-              <MDBModalTitle>Contact US</MDBModalTitle>
+              <MDBModalTitle className="text-light">Contact US</MDBModalTitle>
               <MDBBtn
                 className="btn-close"
                 color="none"
@@ -32,37 +36,46 @@ export default function App() {
               ></MDBBtn>
             </MDBModalHeader>
             <MDBModalBody>
-              <div className="contactus-container">
-                <div className="contact-form">
-                  <div className="input class">
-                    <input
-                      type="text"
-                      className="input"
-                      placeholder="Your Name"
-                    />
-                    <input
-                      type="email"
-                      className="input"
-                      placeholder="Your Email"
-                    />
-                    <input type="tel" className="input" placeholder="Phone" />
-                    <input
-                      type="text"
-                      className="input"
-                      placeholder="Subject"
-                    />
-                  </div>
-                  <div>
-                    <textarea
-                      name="textarea"
-                      className="input"
-                      placeholder="Message"
-                      col="30"
-                      rows="10"
-                    ></textarea>
+              {!sent ? (
+                <div className="contactus-container">
+                  <div className="contact-form">
+                    <div className="input class">
+                      <input
+                        type="text"
+                        className="input"
+                        placeholder="Your Name"
+                      />
+                      <input
+                        type="email"
+                        className="input"
+                        placeholder="Your Email"
+                      />
+                      <input type="tel" className="input" placeholder="Phone" />
+                      <input
+                        type="text"
+                        className="input"
+                        placeholder="Subject"
+                      />
+                    </div>
+                    <div>
+                      <textarea
+                        name="textarea"
+                        className="input"
+                        placeholder="Message"
+                        col="30"
+                        rows="10"
+                      ></textarea>
+                    </div>
                   </div>
                 </div>
-              </div>
+              ) : (
+                <p
+                  className=" text-light p-5 rounded"
+                  style={{ backgroundColor: "green" }}
+                >
+                  Thank you, your message has been sent
+                </p>
+              )}
               <GoogleMap />
             </MDBModalBody>
 
@@ -70,9 +83,16 @@ export default function App() {
               <MDBBtn color="secondary" onClick={toggleShow}>
                 Close
               </MDBBtn>
-              <button className="btn" type="submit" style={{background: '#5638be'}}>
-                Send
-              </button>
+              {!sent && (
+                <button
+                  className="btn"
+                  type="submit"
+                  style={{ background: "#5638be" }}
+                  onClick={(e) => setSent(true)}
+                >
+                  Send
+                </button>
+              )}
             </MDBModalFooter>
           </MDBModalContent>
         </MDBModalDialog>

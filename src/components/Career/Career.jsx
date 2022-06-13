@@ -3,13 +3,12 @@ import "./career.scss";
 
 import { motion } from "framer-motion";
 
-
 export default function Career() {
   return (
     <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    exit={{ opacity: 0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
     >
       <div className="career-container">
         <div className="career-img-left d-flex align-items-center">
@@ -24,7 +23,7 @@ export default function Career() {
             <button type="button" className="btn">
               <a href="#jobs">VIEW CAREERS</a>
             </button>
-            <a href="./">Look for an internship?</a>
+            <a style={{ cursor: "pointer" }}>Look for an internship?</a>
           </div>
         </div>
         <div className="career-img-right"></div>
@@ -36,16 +35,20 @@ export default function Career() {
             <h2 className="lead-heading">MARKETING</h2>
             <ul>
               <li>
-                <a href="./">Marketing Lead</a>
+                <a style={{ cursor: "pointer" }}>Marketing Lead</a>
               </li>
               <li>
-                <a href="./">Content & Online Marketing Manager B2B</a>
+                <a style={{ cursor: "pointer" }}>
+                  Content & Online Marketing Manager B2B
+                </a>
               </li>
               <li>
-                <a href="./">Senior Online Marketing Manager</a>
+                <a style={{ cursor: "pointer" }}>
+                  Senior Online Marketing Manager
+                </a>
               </li>
               <li>
-                <a href="./">SEO Manager</a>
+                <a style={{ cursor: "pointer" }}>SEO Manager</a>
               </li>
             </ul>
           </div>
@@ -54,38 +57,38 @@ export default function Career() {
           <div className="d-flex flex-column">
             <h2 className="lead-heading">WEB DEVELOPMENT</h2>
             <ul>
-                <li>
-                  <a href="./">Front-End Web-Developer</a>
-                </li>
-                <li>
-                  <a href="./">Back-End Web-Developer</a>
-                </li>
-                <li>
-                  <a href="./">Full-Stack Web-Developer</a>
-                </li>
-                <li>
-                  <a href="./">Database Specialist</a>
-                </li>
-              </ul>
-              </div>
+              <li>
+                <a style={{ cursor: "pointer" }}>Front-End Web-Developer</a>
+              </li>
+              <li>
+                <a style={{ cursor: "pointer" }}>Back-End Web-Developer</a>
+              </li>
+              <li>
+                <a style={{ cursor: "pointer" }}>Full-Stack Web-Developer</a>
+              </li>
+              <li>
+                <a style={{ cursor: "pointer" }}>Database Specialist</a>
+              </li>
+            </ul>
           </div>
+        </div>
         <div className="jobs-other d-flex align-items-center" id="jobs">
           <div className="d-flex flex-column mx-5">
             <h2 className="lead-heading">OTHERS</h2>
             <ul>
-                <li>
-                  <a href="./">Lawyer</a>
-                </li>
-                <li>
-                  <a href="./">Accountant</a>
-                </li>
-                <li>
-                  <a href="./">Janitor</a>
-                </li>
-                <li>
-                  <a href="./">Internship</a>
-                </li>
-              </ul>
+              <li>
+                <a style={{ cursor: "pointer" }}>Lawyer</a>
+              </li>
+              <li>
+                <a style={{ cursor: "pointer" }}>Accountant</a>
+              </li>
+              <li>
+                <a style={{ cursor: "pointer" }}>Janitor</a>
+              </li>
+              <li>
+                <a style={{ cursor: "pointer" }}>Internship</a>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="jobs-banner"></div>
