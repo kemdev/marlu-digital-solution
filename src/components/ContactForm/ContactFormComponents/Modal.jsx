@@ -11,6 +11,7 @@ import {
   MDBModalBody,
   MDBModalFooter,
 } from "mdb-react-ui-kit";
+import { MDBTextArea, MDBInput, MDBFile } from "mdb-react-ui-kit";
 
 import "../contactform.scss";
 
@@ -35,37 +36,38 @@ export default function Modal({
                 onClick={toggleShow}
               ></MDBBtn>
             </MDBModalHeader>
-            <MDBModalBody>
+            <MDBModalBody style={{textAlign: "-webkit-center"}}>
               {!sent ? (
-                <div className="contactus-container">
-                  <div className="contact-form">
-                    <div className="input class">
-                      <input
-                        type="text"
-                        className="input"
-                        placeholder="Your Name"
-                      />
-                      <input
-                        type="email"
-                        className="input"
-                        placeholder="Your Email"
-                      />
-                      <input type="tel" className="input" placeholder="Phone" />
-                      <input
-                        type="text"
-                        className="input"
-                        placeholder="Subject"
-                      />
-                    </div>
-                    <div>
-                      <textarea
-                        name="textarea"
-                        className="input"
-                        placeholder="Message"
-                        col="30"
-                        rows="10"
-                      ></textarea>
-                    </div>
+                <div style={{ width: "23rem" }} className="form-container align-self-center">
+                  <MDBInput
+                    label="Full Name"
+                    id="formControlLg"
+                    type="text"
+                    size="lg"
+                    className="mb-2 text-light"
+                  />
+                  <MDBInput
+                    label="Email Address"
+                    id="formControlDefault"
+                    type="text"
+                    size="lg"
+                    className="mb-2"
+                  />
+
+                  <MDBInput
+                    label="Phone Number"
+                    id="formControlSm"
+                    type="text"
+                    size="lg"
+                    className="mb-2"
+                  />
+                  <div className="my-4">
+                    <MDBTextArea
+                      label="Message"
+                      id="textAreaExample"
+                      rows={4}
+                      className="my-2"
+                    />
                   </div>
                 </div>
               ) : (
