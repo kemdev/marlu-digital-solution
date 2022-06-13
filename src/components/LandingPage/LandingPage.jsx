@@ -68,6 +68,7 @@ export default function LandingPage() {
               )
           )
         )}
+
         <div className="d-flex justify-content-center">
           <MDBCard style={{ maxWidth: "540px" }} className="my-3">
             <MDBRow className="g-0">
