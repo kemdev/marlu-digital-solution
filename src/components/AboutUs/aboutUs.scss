@@ -6,6 +6,10 @@
     backface-visibility: hidden;
   }
 
+  .text-block {
+    border: 3px solid white !important;
+    padding: 1rem;  
+  }
   .about-us-title {
     position: absolute;
     text-align: center;
@@ -95,13 +99,6 @@
     }
   }
 
-  .container .card .fa {
-    color: #fff;
-    font-size: 40px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-  }
 
   .container .card h1 {
     color: #fff;
