@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import "./career.scss";
 
 import { motion } from "framer-motion";
 
+import Form from "../Form/GeneralForm";
+import { MarluContext } from "../Context";
 export default function Career() {
+  const { isApplyJob, setIsApplyJob } = useContext(MarluContext);
+  const [jobShow, setJobShow] = useState();
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
+      <Form isApplyJob={isApplyJob} jobShow={jobShow} setJobShow={setJobShow} title='Work With Us' buttonTitle='Submit Now' />
       <div className="career-container">
         <div className="career-img-left d-flex align-items-center">
           <div className="d-flex flex-column">
@@ -23,7 +29,15 @@ export default function Career() {
             <button type="button" className="btn">
               <a href="#jobs">VIEW CAREERS</a>
             </button>
-            <a style={{ cursor: "pointer" }}>Look for an internship?</a>
+            <a
+              style={{ cursor: "pointer" }}
+              onClick={(e) => {
+                setIsApplyJob(true);
+                setJobShow(true);
+              }}
+            >
+              Look for an internship?
+            </a>
           </div>
         </div>
         <div className="career-img-right"></div>
@@ -35,20 +49,36 @@ export default function Career() {
             <h2 className="lead-heading">MARKETING</h2>
             <ul>
               <li>
-                <a style={{ cursor: "pointer" }}>Marketing Lead</a>
+                <a
+                  style={{ cursor: "pointer" }}
+                  onClick={(e) => setIsApplyJob(true)}
+                >
+                  Marketing Lead
+                </a>
               </li>
               <li>
-                <a style={{ cursor: "pointer" }}>
+                <a
+                  style={{ cursor: "pointer" }}
+                  onClick={(e) => setIsApplyJob(true)}
+                >
                   Content & Online Marketing Manager B2B
                 </a>
               </li>
               <li>
-                <a style={{ cursor: "pointer" }}>
+                <a
+                  style={{ cursor: "pointer" }}
+                  onClick={(e) => setIsApplyJob(true)}
+                >
                   Senior Online Marketing Manager
                 </a>
               </li>
               <li>
-                <a style={{ cursor: "pointer" }}>SEO Manager</a>
+                <a
+                  style={{ cursor: "pointer" }}
+                  onClick={(e) => setIsApplyJob(true)}
+                >
+                  SEO Manager
+                </a>
               </li>
             </ul>
           </div>
@@ -58,16 +88,36 @@ export default function Career() {
             <h2 className="lead-heading">WEB DEVELOPMENT</h2>
             <ul>
               <li>
-                <a style={{ cursor: "pointer" }}>Front-End Web-Developer</a>
+                <a
+                  style={{ cursor: "pointer" }}
+                  onClick={(e) => setIsApplyJob(true)}
+                >
+                  Front-End Web-Developer
+                </a>
               </li>
               <li>
-                <a style={{ cursor: "pointer" }}>Back-End Web-Developer</a>
+                <a
+                  style={{ cursor: "pointer" }}
+                  onClick={(e) => setIsApplyJob(true)}
+                >
+                  Back-End Web-Developer
+                </a>
               </li>
               <li>
-                <a style={{ cursor: "pointer" }}>Full-Stack Web-Developer</a>
+                <a
+                  style={{ cursor: "pointer" }}
+                  onClick={(e) => setIsApplyJob(true)}
+                >
+                  Full-Stack Web-Developer
+                </a>
               </li>
               <li>
-                <a style={{ cursor: "pointer" }}>Database Specialist</a>
+                <a
+                  style={{ cursor: "pointer" }}
+                  onClick={(e) => setIsApplyJob(true)}
+                >
+                  Database Specialist
+                </a>
               </li>
             </ul>
           </div>
@@ -77,16 +127,36 @@ export default function Career() {
             <h2 className="lead-heading">OTHERS</h2>
             <ul>
               <li>
-                <a style={{ cursor: "pointer" }}>Lawyer</a>
+                <a
+                  style={{ cursor: "pointer" }}
+                  onClick={(e) => setIsApplyJob(true)}
+                >
+                  Lawyer
+                </a>
               </li>
               <li>
-                <a style={{ cursor: "pointer" }}>Accountant</a>
+                <a
+                  style={{ cursor: "pointer" }}
+                  onClick={(e) => setIsApplyJob(true)}
+                >
+                  Accountant
+                </a>
               </li>
               <li>
-                <a style={{ cursor: "pointer" }}>Janitor</a>
+                <a
+                  style={{ cursor: "pointer" }}
+                  onClick={(e) => setIsApplyJob(true)}
+                >
+                  Janitor
+                </a>
               </li>
               <li>
-                <a style={{ cursor: "pointer" }}>Internship</a>
+                <a
+                  style={{ cursor: "pointer" }}
+                  onClick={(e) => setIsApplyJob(true)}
+                >
+                  Internship
+                </a>
               </li>
             </ul>
           </div>

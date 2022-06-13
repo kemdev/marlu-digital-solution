@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { MDBTextArea, MDBInput, MDBFile } from "mdb-react-ui-kit";
 
-export default function Form({ isApplyJob, setIsApplyJob }) {
+export default function Form({ isApplyJob, setIsApplyJob, jobShow, title }) {
   return (
     <div  className="form-container">
       {/* <MDBInputGroup className='mb-3' size='sm' textBefore='Small'>
@@ -47,7 +47,7 @@ export default function Form({ isApplyJob, setIsApplyJob }) {
             className="my-2"
           />
         </div>
-        {isApplyJob && (
+        {jobShow && (
           <div className="upload-file">
             <MDBFile
               label="Upload Your  Resume"
