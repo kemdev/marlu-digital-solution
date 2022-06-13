@@ -51,7 +51,10 @@ export default function Career() {
               <li>
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={(e) => setIsApplyJob(true)}
+                  onClick={(e) => {
+                    setIsApplyJob(true);
+                    setJobShow(true);
+                  }}
                 >
                   Marketing Lead
                 </a>
@@ -59,7 +62,10 @@ export default function Career() {
               <li>
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={(e) => setIsApplyJob(true)}
+                  onClick={(e) => {
+                    setIsApplyJob(true);
+                    setJobShow(true);
+                  }}
                 >
                   Content & Online Marketing Manager B2B
                 </a>
@@ -67,7 +73,10 @@ export default function Career() {
               <li>
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={(e) => setIsApplyJob(true)}
+                  onClick={(e) => {
+                    setIsApplyJob(true);
+                    setJobShow(true);
+                  }}
                 >
                   Senior Online Marketing Manager
                 </a>
@@ -75,7 +84,10 @@ export default function Career() {
               <li>
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={(e) => setIsApplyJob(true)}
+                  onClick={(e) => {
+                    setIsApplyJob(true);
+                    setJobShow(true);
+                  }}
                 >
                   SEO Manager
                 </a>
@@ -90,7 +102,10 @@ export default function Career() {
               <li>
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={(e) => setIsApplyJob(true)}
+                  onClick={(e) => {
+                    setIsApplyJob(true);
+                    setJobShow(true);
+                  }}
                 >
                   Front-End Web-Developer
                 </a>
@@ -98,7 +113,10 @@ export default function Career() {
               <li>
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={(e) => setIsApplyJob(true)}
+                  onClick={(e) => {
+                    setIsApplyJob(true);
+                    setJobShow(true);
+                  }}
                 >
                   Back-End Web-Developer
                 </a>
@@ -106,7 +124,10 @@ export default function Career() {
               <li>
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={(e) => setIsApplyJob(true)}
+                  onClick={(e) => {
+                    setIsApplyJob(true);
+                    setJobShow(true);
+                  }}
                 >
                   Full-Stack Web-Developer
                 </a>
@@ -114,7 +135,10 @@ export default function Career() {
               <li>
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={(e) => setIsApplyJob(true)}
+                  onClick={(e) => {
+                    setIsApplyJob(true);
+                    setJobShow(true);
+                  }}
                 >
                   Database Specialist
                 </a>
@@ -129,7 +153,10 @@ export default function Career() {
               <li>
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={(e) => setIsApplyJob(true)}
+                  onClick={(e) => {
+                    setIsApplyJob(true);
+                    setJobShow(true);
+                  }}
                 >
                   Lawyer
                 </a>
@@ -137,7 +164,10 @@ export default function Career() {
               <li>
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={(e) => setIsApplyJob(true)}
+                  onClick={(e) => {
+                    setIsApplyJob(true);
+                    setJobShow(true);
+                  }}
                 >
                   Accountant
                 </a>
@@ -145,7 +175,10 @@ export default function Career() {
               <li>
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={(e) => setIsApplyJob(true)}
+                  onClick={(e) => {
+                    setIsApplyJob(true);
+                    setJobShow(true);
+                  }}
                 >
                   Janitor
                 </a>
@@ -153,7 +186,10 @@ export default function Career() {
               <li>
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={(e) => setIsApplyJob(true)}
+                  onClick={(e) => {
+                    setIsApplyJob(true);
+                    setJobShow(true);
+                  }}
                 >
                   Internship
                 </a>
