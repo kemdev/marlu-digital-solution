@@ -12,7 +12,9 @@ import { MDBBtn,
 import From from './Form'
 
 export default function Modal({toggleGeneralFormShow, centredModal, setCentredModal}) {
- 
+  
+
+
 
   return (
     <>
@@ -22,18 +24,14 @@ export default function Modal({toggleGeneralFormShow, centredModal, setCentredMo
         <MDBModalDialog centered>
           <MDBModalContent style={{backgroundColor: '#1d1c23'}} className="text-light">
             <MDBModalHeader>
-              <MDBModalTitle>Modal title</MDBModalTitle>
+              <MDBModalTitle>Reqeust a free Consultation</MDBModalTitle>
               <MDBBtn className='btn-close' color='none' onClick={toggleGeneralFormShow}></MDBBtn>
             </MDBModalHeader>
             <MDBModalBody className='general-modal align-self-center'>
              <From />
+
+              <MDBBtn className='my-4'>Request Free Consultation</MDBBtn>
             </MDBModalBody>
-            <MDBModalFooter>
-              {/* <MDBBtn color='secondary' onClick={toggleGeneralFormShow}>
-                Close
-              </MDBBtn> */}
-              <MDBBtn>Request Free Consultation</MDBBtn>
-            </MDBModalFooter>
           </MDBModalContent>
         </MDBModalDialog>
       </MDBModal>
