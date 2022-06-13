@@ -60,6 +60,7 @@ export default function LandingPage() {
                       <p style={{ lineHeight: "2.1em" }}>{sect?.c2}</p>
                     </div>
                   </Section>
+                  
                 </div>
               )
           )
