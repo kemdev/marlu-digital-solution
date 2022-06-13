@@ -12,6 +12,10 @@ import axios from "axios";
 
 import data from "../../data/sections.json";
 
+import Cards from "./LandingPageComponents/Cards";
+
+import Image1 from '../../img/test-1.jpg'
+
 export default function LandingPage() {
   const { defaultBackgroundColor, colorPalette } = useContext(MarluContext);
 
@@ -37,7 +41,7 @@ export default function LandingPage() {
                     styles={{ width: "70%", alignSelf: !(idx % 2) && "end" }}
                     className="d-flex"
                   >
-                                    {/* {
+                    {/* {
                         idx === 0 && <svg data-v-521892cf="" width="1188" height="440" viewBox="0 0 1188 440" fill="none" xmlns="http://www.w3.org/2000/svg" class="planets"><g data-v-521892cf="" originY="0" strength="200" tag="g" filter="url(#filter0_i-414191)"><path data-v-521892cf="" d="M14.9449 144.046C-13.0264 100.715 -0.574825 42.9132 42.7562 14.942C86.0873 -13.0293 143.889 -0.577755 171.861 42.7533C199.832 86.0844 187.38 143.886 144.049 171.858C100.718 199.829 42.9162 187.377 14.9449 144.046Z" fill="url(#paint0_radial-636102)"></path></g> <g data-v-521892cf="" originY="0" strength="140" tag="g"><path data-v-521892cf="" d="M1146.45 138.974C1184.11 159.322 1198.14 206.344 1177.79 244C1157.44 281.655 1110.42 295.686 1072.77 275.337C1035.11 254.989 1021.08 207.967 1041.43 170.311C1061.78 132.656 1108.8 118.625 1146.45 138.974Z" fill="url(#paint1_radial-897710)"></path></g> <defs data-v-521892cf=""><filter data-v-521892cf="" id="filter0_i-414191" x="0.00683594" y="0.00390625" width="186.792" height="186.792" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood data-v-521892cf="" flood-opacity="0" result="BackgroundImageFix"></feFlood> <feBlend data-v-521892cf="" mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend> <feColorMatrix data-v-521892cf="" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix> <feOffset data-v-521892cf=""></feOffset> <feGaussianBlur data-v-521892cf="" stdDeviation="15"></feGaussianBlur> <feComposite data-v-521892cf="" in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite> <feColorMatrix data-v-521892cf="" type="matrix" values="0 0 0 0 1 0 0 0 0 0.656 0 0 0 0 0.4625 0 0 0 0.11 0"></feColorMatrix> <feBlend data-v-521892cf="" mode="normal" in2="shape" result="effect1_innerShadow"></feBlend></filter> <radialGradient data-v-521892cf="" id="paint0_radial-636102" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(159.5) rotate(126.33) scale(201.709)"><stop data-v-521892cf="" stop-color="#310F41"></stop> <stop data-v-521892cf="" offset="0.567337" stop-color="#160815"></stop> <stop data-v-521892cf="" offset="0.840936" stop-color="#460D13"></stop> <stop data-v-521892cf="" offset="1" stop-color="#9C4F2E"></stop></radialGradient> <radialGradient data-v-521892cf="" id="paint1_radial-897710" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1185.43 188.104) rotate(165.197) scale(164.086)"><stop data-v-521892cf="" stop-color="#090909"></stop> <stop data-v-521892cf="" offset="0.75" stop-color="#140D17"></stop> <stop data-v-521892cf="" offset="0.880208" stop-color="#450F15"></stop> <stop data-v-521892cf="" offset="1" stop-color="#624B10"></stop></radialGradient></defs></svg>
                       } */}
                     <div
@@ -49,7 +53,6 @@ export default function LandingPage() {
                         padding: "50px",
                       }}
                     >
-      
                       <h2 className=" display-1">{sect.title.toUpperCase()}</h2>
                       <hr className="mb-4" />
                       <p style={{ lineHeight: "2.1em" }}>{sect.content}</p>
@@ -61,6 +64,12 @@ export default function LandingPage() {
               )
           )
         )}
+{/* 
+        <div className="d-flex justify-content-center ">
+          <Cards title="title-1" content="content-1" footer="footer-1" img={Image1}/>
+          <Cards title="title-2" content="content-2" footer="footer-2" img={Image1}/>
+          <Cards title="title-3" content="content-3" footer="footer-3" img={Image1}/>
+        </div> */}
       </div>
     </motion.div>
   );
