@@ -15,12 +15,15 @@ export default function MarloProvider({ children }) {
     colorPalette.defaultColor
   );
 
+  const [isApplyJob, setIsApplyJob] = useState(false)
+
   return (
     <MarluContext.Provider
       value={{
         defaultBackgroundColor,
         setDefaultBackgroundColor,
         colorPalette,
+        isApplyJob, setIsApplyJob
       }}
     >
       {children}

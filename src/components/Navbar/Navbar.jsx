@@ -18,6 +18,8 @@ export default function Navbar({
   defaultBackgroundColor,
   setDefaultBackgroundColor,
   textColor,
+  toggleShow,
+  toggleGeneralFormShow
 }) {
   const logoStyle = {
     width: "100%",
@@ -26,16 +28,15 @@ export default function Navbar({
   const location = useLocation();
   const [scrollNavColor, setScrollNavColor] = useState(undefined);
   const [isPill, setIsPill] = useState(false);
-  const [fixed, setFixed] = useState(false)
+  const [fixed, setFixed] = useState(false);
 
   const listenScrollEvent = (e) => {
     if (window.scrollY) {
       setScrollNavColor("rgb(15 15 15 / 80%)");
-      setFixed('fixed-top')
+      setFixed("fixed-top");
     } else {
       setScrollNavColor("transparent");
-      setFixed(false)
-
+      setFixed(false);
     }
   };
 
@@ -44,9 +45,14 @@ export default function Navbar({
     return () => window.removeEventListener("scroll", listenScrollEvent);
   }, []);
 
-
   return (
-    <div className={`${fixed}`} style={{ backgroundColor: scrollNavColor, transition: 'all 0.2s ease-in' }}>
+    <div
+      className={`${fixed}`}
+      style={{
+        backgroundColor: scrollNavColor,
+        transition: "all 0.2s ease-in",
+      }}
+    >
       <div
         className="d-flex justify-content-between align-items-center py-2 px-5 "
         style={{ color: textColor }}
@@ -62,10 +68,15 @@ export default function Navbar({
           <HtmlTooltip title={<ServicesDropdown />}>Services</HtmlTooltip>
           <Link to="/portfolio">Portfolio</Link>
           <Link to="/about-us">About US</Link>
-          <Link to="/contact-us">Contact US</Link>
+          <a to="" onClick={toggleShow} style={{ cursor: "pointer" }}>
+            Contact US
+          </a>
           <Link to="/career">Career</Link>
         </div>
-        <Link to="/request">
+        <a
+        onClick={toggleGeneralFormShow} 
+        style={{ cursor: "pointer" }}
+        >
           <div
             className={`request-pill`}
             style={{
@@ -76,12 +87,12 @@ export default function Navbar({
             onMouseEnter={() => setIsPill(true)}
             onMouseLeave={() => setIsPill(false)}
           >
-            <span style={{ verticalAlign: "middle" }}>Free Consolutation</span>{" "}
+            <span style={{ verticalAlign: "middle" }} >Free Consultation</span>
             <span>
               <CgArrowRightO />
             </span>
           </div>
-        </Link>
+        </a>
       </div>
     </div>
   );
