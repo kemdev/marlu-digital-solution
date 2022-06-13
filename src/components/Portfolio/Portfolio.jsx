@@ -94,11 +94,7 @@ export default function Portfolio() {
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
               consequuntur esse deserunt exercitationem inventore distinctio
-              modi eaque. Odio fuga incidunt ex, commodi vitae exercitationem
-              laudantium, ducimus similique nostrum sequi sed doloremque?
-              Repellat ab earum exercitationem? Temporibus consectetur quam,
-              totam, quia ullam obcaecati eius nihil nemo odio cum quos
-              aspernatur necessitatibus.
+              modi eaque.
             </p>
             <button type="button" className="btn">
               <a href="./">Learn more</a>
