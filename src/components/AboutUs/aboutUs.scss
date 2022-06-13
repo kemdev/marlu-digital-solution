@@ -19,9 +19,12 @@
     display: flex;
     position: relative;
     height:60vh;
-    top: 50%;
-    left: 37%;
-    transform: translate(-50%, -50%);
+      /* top: 50%; */
+    /* left: 37%; */
+    /* transform: translate(-50%, -50%); */
+    justify-content: center;
+    width: 100%;
+    align-items: center;
   }
   .container .card {
     display: inline-block;

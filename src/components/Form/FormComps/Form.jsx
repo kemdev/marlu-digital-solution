@@ -23,7 +23,6 @@ export default function Form({ isApplyJob, setIsApplyJob }) {
           type="text"
           size="lg"
           className="mb-2 text-light"
-          
         />
         <MDBInput
           label="Email Address"
