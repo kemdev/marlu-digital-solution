@@ -31,7 +31,7 @@ export default function Navbar({
   const [fixed, setFixed] = useState(false);
 
   const listenScrollEvent = (e) => {
-    if (window.scrollY) {
+    if (window.scrollY || location.pathname === '/about-us') {
       setScrollNavColor("rgb(15 15 15 / 80%)");
       setFixed("fixed-top");
     } else {
