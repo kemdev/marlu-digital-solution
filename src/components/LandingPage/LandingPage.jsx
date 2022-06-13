@@ -14,7 +14,11 @@ import data from "../../data/sections.json";
 
 import Cards from "./LandingPageComponents/Cards";
 
-import Image1 from '../../img/test-1.jpg'
+import Image1 from "../../img/test-1.jpg";
+
+import Image2 from "../../img/thumbnail.jpeg";
+
+import { MDBCard, MDBCardTitle, MDBCardText, MDBCardBody, MDBCardImage, MDBRow, MDBCol } from "mdb-react-ui-kit";           
 
 export default function LandingPage() {
   const { defaultBackgroundColor, colorPalette } = useContext(MarluContext);
@@ -64,12 +68,42 @@ export default function LandingPage() {
               )
           )
         )}
-{/* 
-        <div className="d-flex justify-content-center ">
-          <Cards title="title-1" content="content-1" footer="footer-1" img={Image1}/>
-          <Cards title="title-2" content="content-2" footer="footer-2" img={Image1}/>
-          <Cards title="title-3" content="content-3" footer="footer-3" img={Image1}/>
-        </div> */}
+
+
+        <div className="d-flex justify-content-center">
+          <MDBCard style={{ maxWidth: "540px" }} className="my-3">
+            <MDBRow className="g-0">
+              <MDBCol md="4">
+                <MDBCardImage src={Image1} alt="..." fluid style={{height:"120.1%", objectFit: "cover", objectPosition: "right"}}/>
+              </MDBCol>
+              <MDBCol md="8">
+                <MDBCardBody>
+                  <MDBCardTitle>Bill Gates from Microsoft</MDBCardTitle>
+                  <MDBCardText>I'm very satisfied with what Marlu delivered.They increased the exposure of my Company tenfold and also digitalized most of my company.</MDBCardText>
+                  <MDBCardText>
+                    <small className="text-muted">5 months ago</small>
+                  </MDBCardText>
+                </MDBCardBody>
+              </MDBCol>
+            </MDBRow>
+          </MDBCard>
+          <MDBCard style={{ maxWidth: "540px" }} className="my-3 ms-5">
+            <MDBRow className="g-0">
+              <MDBCol md="4">
+                <MDBCardImage src={Image2} alt="..." fluid style={{height:"100%"}}/>
+              </MDBCol>
+              <MDBCol md="8">
+                <MDBCardBody>
+                  <MDBCardTitle>Larry Page from Google</MDBCardTitle>
+                  <MDBCardText>Marlu helped my company to get better Results on DuckDuckGo Search Engine. We now got alot more customers than before. </MDBCardText>
+                  <MDBCardText>
+                    <small className="text-muted">1 months ago</small>
+                  </MDBCardText>
+                </MDBCardBody>
+              </MDBCol>
+            </MDBRow>
+          </MDBCard>
+        </div>
       </div>
     </motion.div>
   );
