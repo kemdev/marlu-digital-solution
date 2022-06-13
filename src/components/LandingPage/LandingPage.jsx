@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Parallaximg from "./LandingPageComponents/Parallaximg";
 
 import Section from "../Section";
@@ -18,12 +18,23 @@ import Image1 from "../../img/test-1.jpg";
 
 import Image2 from "../../img/thumbnail.jpeg";
 
-import { MDBCard, MDBCardTitle, MDBCardText, MDBCardBody, MDBCardImage, MDBRow, MDBCol } from "mdb-react-ui-kit";           
+import {
+  MDBCard,
+  MDBCardTitle,
+  MDBCardText,
+  MDBCardBody,
+  MDBCardImage,
+  MDBRow,
+  MDBCol,
+} from "mdb-react-ui-kit";
 
-export default function LandingPage() {
+import { CgArrowRightO } from "react-icons/cg";
+
+export default function LandingPage({ toggleGeneralFormShow }) {
   const { defaultBackgroundColor, colorPalette } = useContext(MarluContext);
 
   const sections = Object.entries(data);
+  const [isPill, setIsPill] = useState(false);
 
   return (
     <motion.div
@@ -69,17 +80,29 @@ export default function LandingPage() {
           )
         )}
 
-
         <div className="d-flex justify-content-center">
           <MDBCard style={{ maxWidth: "540px" }} className="my-3">
             <MDBRow className="g-0">
               <MDBCol md="4">
-                <MDBCardImage src={Image1} alt="..." fluid style={{height:"120.1%", objectFit: "cover", objectPosition: "right"}}/>
+                <MDBCardImage
+                  src={Image1}
+                  alt="..."
+                  fluid
+                  style={{
+                    height: "120.1%",
+                    objectFit: "cover",
+                    objectPosition: "right",
+                  }}
+                />
               </MDBCol>
               <MDBCol md="8">
                 <MDBCardBody>
                   <MDBCardTitle>Bill Gates from Microsoft</MDBCardTitle>
-                  <MDBCardText>I'm very satisfied with what Marlu delivered.They increased the exposure of my Company tenfold and also digitalized most of my company.</MDBCardText>
+                  <MDBCardText>
+                    I'm very satisfied with what Marlu delivered.They increased
+                    the exposure of my Company tenfold and also digitalized most
+                    of my company.
+                  </MDBCardText>
                   <MDBCardText>
                     <small className="text-muted">5 months ago</small>
                   </MDBCardText>
@@ -90,12 +113,20 @@ export default function LandingPage() {
           <MDBCard style={{ maxWidth: "540px" }} className="my-3 ms-5">
             <MDBRow className="g-0">
               <MDBCol md="4">
-                <MDBCardImage src={Image2} alt="..." fluid style={{height:"100%"}}/>
+                <MDBCardImage
+                  src={Image2}
+                  alt="..."
+                  fluid
+                  style={{ height: "100%" }}
+                />
               </MDBCol>
               <MDBCol md="8">
                 <MDBCardBody>
                   <MDBCardTitle>Larry Page from Google</MDBCardTitle>
-                  <MDBCardText>Marlu helped my company to get better Results on DuckDuckGo Search Engine. We now got alot more customers than before. </MDBCardText>
+                  <MDBCardText>
+                    Marlu helped my company to get better Results on DuckDuckGo
+                    Search Engine. We now got alot more customers than before.{" "}
+                  </MDBCardText>
                   <MDBCardText>
                     <small className="text-muted">1 months ago</small>
                   </MDBCardText>
@@ -104,6 +135,35 @@ export default function LandingPage() {
             </MDBRow>
           </MDBCard>
         </div>
+      </div>
+
+      <div
+        style={{
+          color: "white",
+          textAlign: "center",
+          display: "grid",
+          placeContent: "center",
+        }}
+
+        className="py-5"
+      >
+        <a onClick={toggleGeneralFormShow} style={{ cursor: "pointer" }}>
+          <div
+            className={`request-pill`}
+            style={{
+              border: "2px solid #ddba2e",
+              transition: "all 0.5s ease",
+              borderRadius: isPill ? "2rem" : "0.5rem",
+            }}
+            onMouseEnter={() => setIsPill(true)}
+            onMouseLeave={() => setIsPill(false)}
+          >
+            <span style={{ verticalAlign: "middle" }}>Request a Free Consultation</span>
+            <span className="ms-2">
+              <CgArrowRightO />
+            </span>
+          </div>
+        </a>
       </div>
     </motion.div>
   );
